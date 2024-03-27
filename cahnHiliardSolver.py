@@ -21,7 +21,7 @@ physical_parameters_dict = {
     "dy": 1/80 ,
     "max_level": 2,
     "Nx":  1,
-    "Ny": 2,
+    "Ny": 1.5,
     # "dt": dy/16,
     "dy_coarse":lambda max_level, dy: 2**max_level * dy,
     "M": 0.2*5E-5 ,
@@ -44,7 +44,7 @@ physical_parameters_dict = {
     "mu_liq": 10, # Pa.s 
     "gravity": -0.98, # m/s^2 
     "lid_vel_x": 0.0, 
-    "lid_vel_y": 0.001,
+    "lid_vel_y": 0.0,
 
     ###################### SOLVER PARAMETERS ######################
 

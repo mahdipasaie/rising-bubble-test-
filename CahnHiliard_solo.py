@@ -29,9 +29,9 @@ class InitialConditions_pf(fe.UserExpression):
 
         # Check if the point is inside the circle
         if distance_squared < self.rad**2:
-            values[0] = 0.0  # Inside the circle conctration of air
+            values[0] = 1  # Inside the circle conctration of air
         else:
-            values[0] = 1.0  # Outside the circle conctration of liquid
+            values[0] = -1.0  # Outside the circle conctration of liquid
 
         values[1] = 0.0
 
